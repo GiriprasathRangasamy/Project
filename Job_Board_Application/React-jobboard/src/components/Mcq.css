@@ -1,0 +1,252 @@
+/* Mcq.css */
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  align-content: center;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+
+
+button {
+  background-color: #61dafb;
+  max-height: 30px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  color: #282c34;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:hover:not(:disabled) {
+  background-color: #52a0f3;
+  transform: translateY(-2px); 
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+ 
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: left; 
+  transition: all 0.3s ease-in-out; /* Smooth transition for responsiveness */
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffe5e5;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+
+.mcq-container {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mcq-question {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  border-left: 4px solid #61dafb;
+  padding-left: 10px;
+  line-height: 1.6;
+}
+
+.mcq-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.mcq-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mcq-option:hover {
+  background-color: #e8f0fe;
+  border-color: #61dafb;
+}
+
+.mcq-option input[type='radio'] {
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #61dafb; 
+}
+
+.mcq-option label {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.submit-button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  color: #282c34;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background-color: #52a0f3;
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+
+
+.mcq-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.skill-section {
+  margin-bottom: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.mcq {
+  margin-bottom: 15px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.resource-link {
+  font-size: 14px;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.resource-link ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resource-link li {
+  margin-bottom: 5px;
+}
+
+.resource-link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-link a:hover {
+  text-decoration: underline;
+}
+
+.calculate-score-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: #282c34;
+  cursor: pointer;
+}
+
+.scores {
+  margin-top: 20px;
+}
+
+.scores h3 {
+  margin-bottom: 10px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.correct-answer {
+  display: inline;
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+
+.selected-answer {
+  display: inline;
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,126 @@
+
+
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .chatbot-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbox {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .chatbox-header {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chatbox-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-message.user {
+    justify-content: flex-end;
+  }
+  
+  .chat-message.bot {
+    justify-content: flex-start;
+  }
+  
+  .message-text {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .chat-message.user .message-text {
+    background-color: #7d9fef;
+    color: white;
+  }
+  
+  .chatbox-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .chatbox-footer input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chatbox-footer button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chatbox-footer button:hover {
+    background-color: #45a049;
+  }
+  

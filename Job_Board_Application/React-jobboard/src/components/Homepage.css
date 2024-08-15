@@ -1,0 +1,48 @@
+
+#home{
+   
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    
+}
+#items{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 5vh;
+    font-size: 1.4em;
+    padding-bottom: 20vh;
+}
+#postjob{
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 30vw;
+    
+}
+#getjob{
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 30vw;
+
+}
+.img{
+    width: 20vw;
+    height: 40vh;
+}
+#heading{
+    height:auto;
+    text-align: center;
+    background-image: url("D:\appdevelopment\Job board application\job_board_frontend\src\components\images\bac1.jpg");
+    color: white;
+    width: 70vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    padding: 5vh;
+    
+}

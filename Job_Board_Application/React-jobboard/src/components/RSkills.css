@@ -1,0 +1,71 @@
+
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  button {
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #282c34;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  main {
+    
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .resource-section {
+    /* margin-bottom: 40px; */
+    padding: 10px;
+    
+  }
+  
+  .resource-section h2 {
+    margin-top: 0;
+  }
+  
+  .resource-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-section li {
+    margin-bottom: 10px;
+  }
+  
+  .resource-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .resource-section a:hover {
+    text-decoration: underline;
+  }
+  

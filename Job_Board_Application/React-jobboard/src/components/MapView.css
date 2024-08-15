@@ -1,0 +1,114 @@
+.map-view-container {
+  width: 130vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.map-view-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+/* src/MapView.css */
+
+.popup-content {
+  max-height: 150px; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+
+.job-divider {
+  margin: 10px 0;
+}
+
+.map-view-layout {
+  display: flex;
+  height: 600px; /* Set a fixed height for the layout */
+}
+
+.map-view-filters {
+  flex: 0 0 30%; /* Takes up 30% of the width */
+  padding-right: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.map-view-map {
+  flex: 1; /* Takes up the remaining width */
+  position: relative; /* Make map-view-map relative to position SearchBar */
+  height: 88vh; /* Full height */
+  width: 75vw;
+}
+
+.search-bar {
+  position: absolute;
+  top: 10px; /* Position the search bar at the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  padding: 10px 15px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-form .form-group {
+  margin-bottom: 15px;
+}
+
+.map-view-card {
+  border-radius: 10px;
+  border: solid 1px black;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 71vh; /* Full height of the filter section */
+}
+
+.map-view-card .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.map-view-card .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.map-view-card .form-control {
+  border-radius: 5px;
+}
+
+.search-bar .form-control {
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.search-bar .btn-primary {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.search-bar .btn-primary:focus {
+  outline: none;
+}
+
+.map-view-map .leaflet-container {
+  height: 100%; /* Ensures the map takes the full height of the container */
+}
